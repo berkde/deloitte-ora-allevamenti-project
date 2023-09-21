@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Deloitte | API Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../img/cloud-logo.webp">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="cursor"></div>
+        <div class="outline"></div>
+
+        <div class="header">
+            <div class="logo">
+                <a href="../index.html">
+               <img src="../img/aws-deloitte.png" alt="" style="width: 300px;">
+                </a>
+            </div>
+            <ul class="menu">
+                <li class="normal-text"><a href="../index.html">Home</a></li>
+                <li class="normal-text"><a href="./documentation.html">Documentation</a></li>
+            </ul>
+            <div class="cta">
+                <a href="contact.html" class="button">Contact</a>
+            </div>
+        </div>
+
+
+        <div class="hero hero__small">
+            <div class="hero__content reveal">
+                <p class="intro-text">DELOITTE CLOUD ENGINEERING</p>
+                <h1 class="big-text">Everything is possible with us</h1>
+            </div>
+        </div>
+
+        <div class="api bg-cover__text reveal">
+            <h3 class="intro-text">API DOCUMENTATION</h3>
+            <div class="api__content">
+                  <div class="normal-text">
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                  </div>
+            </div>
+        </div>
+
+      
+
+        <footer class="footer footer--small">
+            <div class="grid">
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Jquery-->
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.js"></script>
+
+<script>
+    ScrollReveal().reveal('.reveal',{distance:'60px',duration:1500, easing: 'cubic-bezier(.215,.61,.355,1)',interval:600});
+
+    let outline = document.querySelector('.outline');
+    let cursor = document.querySelector('.cursor');
+    let links = document.querySelectorAll('a');
+
+    document.addEventListener('mousemove',function(event){
+
+        let x = event.clientX;
+        let y = event.clientY;
+
+        outline.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%) )`;
+    
+        links.forEach((link) => {
+            link.addEventListener("mouseover",function(){
+                outline.classList.add('hover');
+                cursor.classList.add('hover');
+            });
+        });
+        links.forEach((link) => {
+            link.addEventListener("mouseleave",function(){
+                outline.classList.remove('hover');
+                cursor.classList.remove('hover');
+            });
+        });
+
+    });
+
+</script>
+
+
+    </body>
+
+</html>

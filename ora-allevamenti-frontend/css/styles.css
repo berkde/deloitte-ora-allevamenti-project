@@ -1,0 +1,249 @@
+/* ! base styles */
+body { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 16px;}
+
+
+h1, h2, h3, h4 , h5, p {color: black;padding-bottom: 30px;}
+
+a{text-decoration: none;}
+
+p{line-height: 28px;color: #666;font-weight: 300;}
+
+.big-text { font-size:60px; font-weight: 700;}
+.middle-text { font: size 40px;}
+.normal-text { font-size:20px;}
+.small-text { font-size: 14px;}
+
+.intro-text { text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+.button{
+    padding: 12px 45px;
+    background: #333333;
+    color: white !important;
+    display: inline-block;
+    border-radius: 4px; 
+}
+
+/* ! Cursor */
+
+.outline {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9999999;
+    mix-blend-mode: difference;
+    transform: translate(-64px,-64px);
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    pointer-events: none;
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background:#fff;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9999999;
+    transform: translate(-8px,-8px);
+    pointer-events: none;
+}
+
+.outline.hover{
+    background:#fff;
+    border-color: #45a049;
+    width: 128px;
+    height: 128px;
+}
+
+.cursor.hover{
+    width: 12px;
+    height: 12px;
+}
+
+/* ! Helpers */
+.mt-1{margin-top: 30px;}
+.mt-2{margin-top: 80px;}
+.mt-3{margin-top: 130px;}
+.tw{color:#fff}
+
+
+/* ! Header */
+
+.header {
+width: 100%;
+top:0;
+left:0;
+display: flex;
+background: white !important;
+z-index: 1;
+}
+
+.logo {width: 300px;padding-left: 40px;}
+
+.logo__small{top: 0; right: 0;width: 50px;}
+
+.menu {
+    width: 64%;
+    
+}
+.menu li{display: inline-block; padding: 20px; } 
+.menu li a{color: black; padding: 15px;display: block;}
+
+.cta{
+    width: max-content;
+    position:relative;
+    top:0;
+    right:0;
+    padding:40px;
+}
+    
+   
+/* ! Hero */
+
+.hero {
+    background: #fff;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    background: linear-gradient(0deg, rgba(0,0,0,.4),rgba(0,0,0,0) 70.71%),
+     url('../img/hero.jpg') no-repeat center center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+.hero__small{
+    max-height: 360px;
+    overflow: hidden;
+}
+
+
+.hero__content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 5%;
+    margin-top: 20%;
+    padding: 100px;
+    overflow: hidden;
+}
+
+
+.hero__content h1,
+.hero__content p{color: #fff;}
+
+
+/* ! Poster */
+
+.poster {
+    display: flex;
+    height: 100vh;
+    width: 104%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.poster__img{
+    width: 65%;
+}
+.poster__img img{
+    object-fit: cover; width: 100%; height: 100%;
+}
+.poster__content{
+    width: 35%;padding: 50px;
+
+}
+
+/* BG Cover */
+
+.bg-cover{
+    border: 1px solid red;
+    display: flex;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(0,0,0,.4), rgba(0,0,0,0.7),
+    url('body.jpg') no no-repeat center center);
+    background-size: cover;
+}
+
+.bg-cover__text{width: 50%;padding: 30px;}
+.bg-cover__title{width: 50%;padding: 50%;display: flex;align-items: center;}
+
+/* ! Grid */
+.grid{display: flex;max-width: 1150;padding: 0 25px;margin: 10px;}
+.grid .col{width: 100%}
+
+
+/* ! Footer */
+
+.footer {
+    background: #010e30;
+    padding: 100px 0;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.footer--small {
+    background: #010e30;
+    padding: 40px 0;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.content{max-width: 900px;margin:0 auto}
+
+
+/* ! Contact */
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #333333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: #010e30;
+    padding: 250px;
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+  /* ! API */
+
+  .api {
+    background: #fff;
+    height: 400px;
+    display: flex;
+    width: 100%;
+    align-items: center; 
+  }
+
+  .api__content{
+    padding: 50px;
+  }

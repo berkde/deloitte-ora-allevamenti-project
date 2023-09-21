@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Deloitte | AWS Cloud Transfer</title>
+    <link rel="icon" type="image/x-icon" href="../img/cloud-logo.webp">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/cubbit.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="outline"></div>
+
+    <div class="container reveal">
+
+        <h1 class="middle-text tw mt-1 reveal"><strong style="color: #010e30;">CUBBIT</strong> TRANSFER</h1>
+        <div class="container--content reveal">
+
+            <div id="myCubbitDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myCubbitInput" onkeyup="cubbitWordFilter()">
+                <!-- Add the Inner HTML -->
+
+
+            </div>
+
+        </div>
+
+
+        <div class="grid reveal">
+            <div class="cta">
+                <button onclick="sendFiles()" class="button middle-text tw">SEND</button>
+            </div>
+        </div>
+
+        <div class="grid reveal" style="bottom: 0;right: 0;">
+            <div class="cta">
+                <a href="../index.html">    <button class="button middle-text tw">HOME</button></a>
+            </div>
+        </div>
+
+        <div id="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <h1 class="middle-text tw" id="content">THE FILES SUCCESSFULLY SENT</h1>
+
+        <script src="../js/cubbitScript.js"></script>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

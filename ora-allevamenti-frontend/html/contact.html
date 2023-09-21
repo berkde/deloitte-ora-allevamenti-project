@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Deloitte | Contact</title>
+        <link rel="icon" type="image/x-icon" href="../img/cloud-logo.webp">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+        <script type="text/javascript" src="../js/validate-form.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="cursor"></div>
+        <div class="outline"></div>
+
+        <div class="header">
+            <div>
+                <a href="../index.html">
+               <img  class="logo" src="../img/aws-deloitte.png" alt="" >
+                </a>
+            </div>
+            <ul class="menu">
+                <li class="normal-text"><a href="../index.html">Home</a></li>
+                <li class="normal-text"><a href="../html/documentation.html">Documentation</a></li>
+            </ul>
+            <div class="cta">
+                <a href="../index.html">
+                <img class="logo__small" src="../img/cloud-logo.webp" alt="">
+                </a>
+             </div>
+        </div>
+
+
+        <div class="hero hero__small">
+            <div class="hero__content reveal">
+                <p class="intro-text">DELOITTE CLOUD ENGINEERING</p>
+                <h1 class="big-text">CONTACT US</h1>
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="poster__img">
+                <img src="../img/cloud-engineering-admiral-emblem.webp"  alt="">
+            </div>
+            <div class="grid reveal" style="margin-top: 30px;">
+
+                    <form id="myForm" action="validate-form.js">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                  
+                      <label for="problem">Related Problem</label>
+                      <select id="problem" name="problem" required>
+                        <option value="aws">AWS Bucket Connection</option>
+                        <option value="cubbit">CUBBIT Bucket Connection</option>
+                        <option value="other">Other</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Your message" style="height:200px" required></textarea>
+                    <div>
+                      <input type="submit" value="Submit" class="button">
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+  
+
+      
+
+        <footer class="footer footer--small">
+            <div class="grid">
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+                <div class="col">
+                    <h4 class="normal-text tw">Lorem ipsum</h4>
+                    <p>Lorem Ispum dos aia sm</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.js"></script>
+
+        <script>
+            ScrollReveal().reveal('.reveal',{distance:'60px',duration:1500, easing: 'cubic-bezier(.215,.61,.355,1)',interval:600});
+
+            let outline = document.querySelector('.outline');
+    let cursor = document.querySelector('.cursor');
+    let links = document.querySelectorAll('a');
+
+    document.addEventListener('mousemove',function(event){
+
+        let x = event.clientX;
+        let y = event.clientY;
+
+        outline.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%) )`;
+    
+        links.forEach((link) => {
+            link.addEventListener("mouseover",function(){
+                outline.classList.add('hover');
+                cursor.classList.add('hover');
+            });
+        });
+        links.forEach((link) => {
+            link.addEventListener("mouseleave",function(){
+                outline.classList.remove('hover');
+                cursor.classList.remove('hover');
+            });
+        });
+
+    });
+        </script>
+
+    </body>
+
+</html>
