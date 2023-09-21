@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "476a1a4e-f85f-4b81-a3d5-88f56f1a4db8",
+		"name": "Ora Allevamenti - BDN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFarmBoxes",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarmBoxes/{farm_bdn_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarmBoxes",
+								"{farm_bdn_code}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarmBoxes/{farm_bdn_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarmBoxes",
+								"{farm_bdn_code}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getFarms",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarms/{asl_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarms",
+								"{asl_code}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarms/{asl_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarms",
+								"{asl_code}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getList",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarms/{asl_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarms",
+								"{asl_code}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarms/{asl_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarms",
+								"{asl_code}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "modelloFourBDN",
+			"item": [
+				{
+					"name": "model4",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/model4/{avimodId}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"model4",
+										"{avimodId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/model4/{avimodId}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"model4",
+										"{avimodId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "print",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/print/{Avimod_ID}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"print",
+										"{Avimod_ID}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/print/{Avimod_ID}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"print",
+										"{Avimod_ID}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "trattamento",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/trattamento",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"trattamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/trattamento",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"trattamento"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "withDrawal",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/withdrawal/{Withdrawal_ID}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"withdrawal",
+										"{Withdrawal_ID}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN/withdrawal/{Withdrawal_ID}",
+									"protocol": "https",
+									"host": [
+										"9txdjecs63",
+										"execute-api",
+										"eu-central-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"modelloFourBDN",
+										"withdrawal",
+										"{Withdrawal_ID}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/modelloFourBDN",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"modelloFourBDN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarmBoxes/{farm_bdn_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarmBoxes",
+								"{farm_bdn_code}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/getFarmBoxes/{farm_bdn_code}",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"getFarmBoxes",
+								"{farm_bdn_code}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "searchGruppi",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/searchGruppi",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"searchGruppi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/searchGruppi",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"searchGruppi"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sfoltimentiBDN",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/sfoltimentiBDN",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"sfoltimentiBDN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/sfoltimentiBDN",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"sfoltimentiBDN"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stabilimentiMacellazione",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/stabilimentiMacellazione",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"stabilimentiMacellazione"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://9txdjecs63.execute-api.eu-central-1.amazonaws.com/dev/stabilimentiMacellazione",
+							"protocol": "https",
+							"host": [
+								"9txdjecs63",
+								"execute-api",
+								"eu-central-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"stabilimentiMacellazione"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
