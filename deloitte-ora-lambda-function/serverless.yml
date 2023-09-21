@@ -1,0 +1,105 @@
+service: deloitte-cloud-transfer-lambda-function
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  region: eu-west-1
+  endpointType: REGIONAL
+  timeout: 20
+  architecture: x86_64
+  runtime: nodejs18.x
+  memorySize: 512
+  stage: dev
+  logs:
+    restApi:
+      level: ERROR
+  tracing:
+    apiGateway: true
+    metrics: true
+  cloudWatchMetrics: true
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "s3:GetObject"
+            - "s3:PutObject"
+          Resource:
+            Fn::Join:
+              - ""
+              - - "arn:aws:s3:::"
+                - "awscubbitbackupbucket"
+                - "/*"
+        - Effect: "Allow"
+          Action:
+            - "s3:ListBucket"
+          Resource:
+            Fn::Join:
+              - ""
+              - - "arn:aws:s3:::"
+                - "awscubbitbackupbucket"
+
+  environment:
+    CUBBIT_ACCESS_KEY_ID: Ho2ecAXlMs18cujcAVSPA1y4frDCp2sD
+    CUBBIT_SECRET_ACCESS_KEY: 5NYhTKucRn6BVYavVI8DRYOa9p4/XjnVEknmkWFGz18=
+    AWS_BUCKET_NAME: awscubbitbackupbucket
+    CUBBIT_BUCKET_NAME: orabucket
+    CUBBIT_REGION: eu-west-1
+    CUBBIT_END_POINT_URL: https://s3.cubbit.eu
+
+#package:
+#  patterns:
+#    - '!exclude-me.js'
+#    - '!exclude-me-dir/**'
+#    - include-me.js
+#    - include-me-dir/**
+
+functions:
+  GetBackupsFunction:
+    handler: src/handlers.getBackupsHandler
+    events:
+      - http:
+          path: api/v1/backup/{client}
+          method: GET
+          operationId: getBackups
+          cors:
+            origin: "*"
+            maxAge: 86400
+          headers:
+            - Content-Type
+            - Access-Control-Allow-Origin
+            - X-Amz-Date
+            - X-Api-Key
+            - X-Amz-User-Agent
+            - X-Amzn-Trace-Id
+          cacheControl: "max-age=600, s-maxage=600, proxy-revalidate"
+          response:
+            headers:
+              Content-Type: "'text/plain'"
+              Cache-Control: "'max-age=120'"
+  PostBackupsFunction:
+    handler: src/handlers.postBackupsHandler
+    events:
+      - http:
+          path: /api/v1/backup/{client}
+          method: POST
+          operationId: postBackups
+          cors:
+            origin: "*"
+            maxAge: 86400
+          headers:
+            - Content-Type
+            - Access-Control-Allow-Origin
+            - X-Amz-Dates
+            - X-Api-Key
+            - X-Amz-User-Agent
+            - X-Amzn-Trace-Id
+          cacheControl: "max-age=600, s-maxage=600, proxy-revalidate"
+          response:
+            headers:
+              Content-Type: "'text/plain'"
+              Cache-Control: "'max-age=120'"
+
+plugins:
+  - serverless-plugin-typescript

@@ -1,0 +1,22 @@
+{
+  "name": "deloitte-ora-lambda-function",
+  "version": "1.0.0",
+  "description": "This is a private Software and Can't be copied or used for any purpose.The project belongs solely to the author 'BERK DELIBALTA' at this stage and it's not permitted to use this project for commercial or personal motives, which directly leads up to violation of the rights, therefore the legal terms will come into full effect unless. This is a Lambda functions Interface that will be invoked by AWS API Gateway",
+  "scripts": {
+    "test": "NO TESTING STAGE"
+  },
+  "author": "Berk Delibalta",
+  "license": "Deloitte Consulting Srl || Berk Delibalta",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.14.6",
+    "prettier": "^2.8.4",
+    "serverless": "^3.28.1",
+    "serverless-plugin-typescript": "^2.1.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.287.0",
+    "aws-sdk": "^2.1331.0"
+  }
+}
